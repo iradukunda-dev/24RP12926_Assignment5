@@ -1,6 +1,6 @@
 <?php
 
-// 1. DATABASE CONNECTION
+// 1. DATABASE CONNECTION 
 $host = 'localhost';
 $user = 'root';
 $pass = '';
@@ -48,7 +48,7 @@ if (isset($_GET['delete'])) {
     $message = '🗑️ Book deleted!';
 }
 
-// 5. EDIT REQUEST OPERATION
+// 5. THIS IS SELECT
 if (isset($_GET['edit'])) {
     $book_id = $_GET['edit'];
     $stmt = $conn->prepare('SELECT * FROM books WHERE book_id = ?');
